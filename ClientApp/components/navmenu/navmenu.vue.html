@@ -1,0 +1,33 @@
+<style src="./navmenu.css"></style>
+
+<template>
+    <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <router-link to="/" :exact="true" class="nav-link">
+	                <i class="fa fa-home" aria-hidden="true"></i> Home
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link to="/counter" class="nav-link">
+	                <i class="fa fa-university" aria-hidden="true"></i> Counter
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link to="/fetchdata" class="nav-link">
+	                <i class="fa fa-th-list" aria-hidden="true"></i> Fetch data
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link to="/todos" class="nav-link">
+	                <i class="fa fa-list-alt" aria-hidden="true"></i> TODO list
+                </router-link>
+            </li>
+	        <li class="nav-item">
+		        <router-link to="/toast" class="nav-link">
+			        <i class="fa fa-list-alt" aria-hidden="true"></i> Toastr
+		        </router-link>
+	        </li>
+        </ul>
+    </nav>
+</template>
